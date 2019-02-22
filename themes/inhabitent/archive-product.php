@@ -19,7 +19,9 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 			<h2>this is where we do all our product page makrup</h2>
-			<?php /* Start the Loop */ ?>
+<section>
+
+			<?php foreach ( product_types=get_terms)'product_type') : setup_postdata( $term); ?> 
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php

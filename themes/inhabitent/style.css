@@ -1,9 +1,9 @@
 /*!
-Theme Name: Inhabitent Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
-Description: Theme for project 4 for RED Academy students.
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -670,3 +670,72 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  min-height: 250px;
+  background-image: url("../../Images/dark-wood.png"); }
+  .site-footer .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-top: 50px; }
+    .site-footer .logo img {
+      width: 80%; }
+  .site-footer h3 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #d99054;
+    letter-spacing: 2px; }
+  .site-footer p {
+    color: #fff; }
+    .site-footer p svg {
+      margin-left: 5px;
+      margin-right: 5px; }
+
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px; }
+  .contact-info p {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .contact-info a {
+    text-decoration: none;
+    color: inherit; }
+    .contact-info a:hover {
+      text-decoration: underline;
+      color: white; }
+
+.business-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px; }
+  .business-hours p {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.copy-right {
+  grid-column: 1 / 4;
+  grid-row: 2;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 20px; }
