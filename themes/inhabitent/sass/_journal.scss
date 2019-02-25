@@ -1,0 +1,30 @@
+.journal-page {
+  .entry-header {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .entry-title {
+    position: absolute;
+    top: 0;
+  }
+  .entry-meta {
+    position: absolute;
+    right: 60px;
+    bottom: 7px;
+    color: white;
+    background-color: $color_title_bg;
+    padding: 7px 20px;
+    font-size: 16px;
+  }
+  // img {
+  //   width: 100%;
+  // }
+  a {
+    color: white;
+    background-color: $color_title_bg;
+    text-transform: uppercase;
+    padding: 10px 20px;
+  }
+}

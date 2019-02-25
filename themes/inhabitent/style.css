@@ -200,7 +200,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: none;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -348,6 +348,9 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+a {
+  text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -420,7 +423,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -474,7 +477,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
-    display: none; }
+    display: block; }
   .main-navigation ul {
     display: block; } }
 
@@ -606,6 +609,10 @@ a {
 .bypostauthor {
   display: block; }
 
+.site-main {
+  width: 1120px;
+  margin: 0 auto; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -687,6 +694,8 @@ object {
     padding-top: 50px; }
     .site-footer .logo img {
       width: 80%; }
+  .site-footer .container {
+    padding: 70px; }
   .site-footer h3 {
     margin: 0;
     text-transform: uppercase;
@@ -697,45 +706,133 @@ object {
     .site-footer p svg {
       margin-left: 5px;
       margin-right: 5px; }
+  .site-footer .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 50px; }
+    .site-footer .contact-info p {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .site-footer .contact-info a {
+      text-decoration: none;
+      color: inherit; }
+      .site-footer .contact-info a:hover {
+        text-decoration: underline;
+        color: white; }
+  .site-footer .business-hours {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 50px; }
+    .site-footer .business-hours p {
+      color: #fff;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+  .site-footer .copy-right {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px; }
 
-.contact-info {
+.home .entry-header {
+  position: relative; }
+
+.home .entry-title {
+  position: absolute;
+  top: 0; }
+
+.home .product-types-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 50px; }
-  .contact-info p {
-    margin-top: 10px;
-    margin-bottom: 10px; }
-  .contact-info a {
-    text-decoration: none;
-    color: inherit; }
-    .contact-info a:hover {
-      text-decoration: underline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center; }
+  .home .product-types-container .product-type-item {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px; }
+    .home .product-types-container .product-type-item .homebutton {
+      padding: .75rem 1.5rem;
+      background: #248a83;
+      text-transform: uppercase;
       color: white; }
+    .home .product-types-container .product-type-item img {
+      width: 50px; }
 
-.business-hours {
+.journal-page .entry-header {
+  position: relative;
+  max-width: 700px;
+  margin: auto; }
+
+.journal-page .entry-title {
+  position: absolute;
+  top: 0; }
+
+.journal-page .entry-meta {
+  position: absolute;
+  right: 60px;
+  bottom: 7px;
+  color: white;
+  background-color: #248A83;
+  padding: 7px 20px;
+  font-size: 16px; }
+
+.journal-page a {
+  color: white;
+  background-color: #248A83;
+  text-transform: uppercase;
+  padding: 10px 20px; }
+
+.main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 50px; }
-  .business-hours p {
-    color: #fff;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: white; }
 
-.copy-right {
-  grid-column: 1 / 4;
-  grid-row: 2;
-  width: 100%;
-  text-align: center;
+.tent-logo {
+  height: 3em;
+  width: 3rem; }
+  .tent-logo .site-header {
+    position: absolute; }
+
+.hero-image-header {
+  height: 100vh;
   text-transform: uppercase;
   color: white;
-  padding: 20px; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.product-icons {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+  border: 1px solid #e1e1e1; }
+
+.email-info {
+  color: red; }
+  .email-info .required {
+    color: red; }
+    .email-info .required .input-type {
+      background-color: red; }
+      .email-info .required .input-type .your-name {
+        background-color: red; }

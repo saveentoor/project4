@@ -2,14 +2,14 @@
 /**
  * The template for displaying the footer.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent
  */
 
 ?>
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 
-	<div class="contact-info">
+	<div class="contact-info container">
 		<h3>Contact Info</h3>
 		<div class="contact-content">
 			<p><i class ="fa fa-envelope"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
@@ -21,13 +21,13 @@
 		</div>
 
 	</div>
-	<div class="business-hours">
+	<div class="business-hours container">
 		<h3>Business Hours</h3>				
 			<p><strong>Monday-Friday: </strong> 9am to 5pm	</p>
 			<p><strong>Saturday: </strong> 10am to 2pm</p>
 			<p><strong>Sunday: </strong> Closed</p>				
 	</div>
-	<div class="logo">
+	<div class="logo container">
 		<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-text.svg" /></a>
 	</div>
 				
@@ -36,8 +36,6 @@
 	</div> 
 </footer>
 				
-
-
 <?php wp_footer(); ?>
 
 </body>

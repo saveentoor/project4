@@ -3,7 +3,7 @@
  * The template for displaying all pages.
  *
  * Template Name: About Page
- * @package RED_Starter_Theme
+ * @package Inhabitent
  */
 
 get_header(); ?>
@@ -13,7 +13,21 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<?php the_content(); ?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+				'after'  => '</div>',
+			) );
+		?>
+	</div><!-- .entry-content -->
+</article><!-- #post-## -->
 
 			<?php endwhile; // End of the loop. ?>
 

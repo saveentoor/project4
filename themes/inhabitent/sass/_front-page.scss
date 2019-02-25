@@ -1,0 +1,38 @@
+.home {
+  .entry-header {
+    position: relative;
+    
+  }
+
+  .entry-title {
+    position: absolute;
+    top: 0;
+  }
+
+.product-types-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+ 
+
+  .product-type-item {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    
+.homebutton {
+  padding: .75rem 1.5rem;
+    background: #248a83;
+    text-transform: uppercase;
+    color: white;
+}
+
+  img{
+    
+    width: 50px;
+
+    
+    }
+  }
+  }
+}
+
