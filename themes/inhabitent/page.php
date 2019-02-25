@@ -6,18 +6,18 @@
  */
 
 get_header(); ?>
-	<div class="email-info"> 
+	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+	<div class="find-us-page">
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
-		</main>
-	</div> 
+		
+	
 	
 
 	<form action="find-us" method="post" class="find-us">
@@ -29,7 +29,13 @@ get_header(); ?>
     <p class="message"><label>Message <span class="required">*</span></label><span class="your-message"><textarea name="your-message" cols="40" rows="10"></textarea></span> </p>
     <input type="submit" value="Submit" class="submit">
 </div>
-	</div> 
+</form>
+</div>
+</main>
 
 <?php get_sidebar(); ?>
+
+	</div> 
+	
+
 <?php get_footer(); ?>

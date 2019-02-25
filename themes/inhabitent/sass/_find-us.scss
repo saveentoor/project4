@@ -1,24 +1,38 @@
-// .submit-button {
-//     padding: .75rem 1.5rem;
-//       background: #248a83;
-//       text-transform: uppercase;
-//       color: white;
-// }
-
-.email-info{
-  color:red;
-
-  .required {
-    color:red;
-  
-  .input-type{
-    background-color: red;
-  
-.your-name{
-  background-color: red;
+.blog, .page-template-default{
+.content-area{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 0 auto;
+  padding-bottom: 10vh;
 }
+.site-content{
+    width:1120px;
+    margin: 0 auto;
+}
+.site-main{
+  border-right: 1px solid #f4f4f4;
+}
+}
+.find-us {
+  input{
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+
+  }
+ 
+  input[type=submit] {
+    color: white;
+    background: #248a83;
+    text-transform: uppercase;
+    padding: .75rem 1.5rem;
+    box-shadow: none;
+  }
+textarea{
+  background-color: #f4f4f4;
+}
+}
+.find-us-page{
+  figure {
+    margin: 0;
   }
 }
-}
-// background-color: #f4f4f4;
-// border: 1px solid #e1e1e1;

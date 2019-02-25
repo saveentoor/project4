@@ -222,9 +222,48 @@ td,
 th {
   padding: 0; }
 
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../fonts/merriweather-light-webfont.eot");
+  src: url("../../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../fonts/merriweather-light-webfont.woff") format("woff"), url("../../fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../fonts/merriweather-lightitalic-webfont.eot");
+  src: url("../../fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../../fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../fonts/merriweather-bold-webfont.eot");
+  src: url("../../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bold-webfont.woff") format("woff"), url("../../fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../fonts/merriweather-bolditalic-webfont.eot");
+  src: url("../../fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../../fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -571,6 +610,28 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.phone {
+  color: #248a83;
+  font-family: Merriweather Web,serif; }
+
+.info-email {
+  color: #248a83;
+  font-family: Merriweather Web,serif; }
+
+.address {
+  font-family: Merriweather Web,serif;
+  line-height: 1.75;
+  color: #404040; }
+
+h2 {
+  font-family: Novecento Sans Web,sans-serif; }
+
+.day-of-week {
+  font-family: Merriweather Web,serif; }
+
+p {
+  font-family: Merriweather Web,serif; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -608,10 +669,6 @@ a {
 
 .bypostauthor {
   display: block; }
-
-.site-main {
-  width: 1120px;
-  margin: 0 auto; }
 
 /*--------------------------------------------------------------
 # Media
@@ -746,6 +803,13 @@ object {
     color: white;
     padding: 20px; }
 
+.home-page-image {
+  background-image: url(../../images/inhabitent-logo-full.svg), url(../../images/home-hero.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: center, center;
+  height: 700px; }
+
 .home .entry-header {
   position: relative; }
 
@@ -763,38 +827,44 @@ object {
   text-align: center; }
   .home .product-types-container .product-type-item {
     border: 1px solid #e1e1e1;
-    border-top-width: 5px; }
+    border-top-width: 5px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 20%;
+            flex: 1 0 20%; }
     .home .product-types-container .product-type-item .homebutton {
-      padding: .75rem 1.5rem;
+      padding: 0.75rem 1.5rem;
       background: #248a83;
       text-transform: uppercase;
       color: white; }
     .home .product-types-container .product-type-item img {
       width: 50px; }
 
-.journal-page .entry-header {
-  position: relative;
-  max-width: 700px;
+.journal-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   margin: auto; }
-
-.journal-page .entry-title {
-  position: absolute;
-  top: 0; }
-
-.journal-page .entry-meta {
-  position: absolute;
-  right: 60px;
-  bottom: 7px;
-  color: white;
-  background-color: #248A83;
-  padding: 7px 20px;
-  font-size: 16px; }
-
-.journal-page a {
-  color: white;
-  background-color: #248A83;
-  text-transform: uppercase;
-  padding: 10px 20px; }
+  .journal-page .entry-header {
+    position: relative;
+    max-width: 700px; }
+    .journal-page .entry-header a {
+      color: white;
+      background-color: #248A83;
+      text-transform: uppercase;
+      padding: 10px 20px; }
+  .journal-page .entry-title {
+    position: absolute;
+    top: 0; }
+  .journal-page .entry-meta {
+    position: absolute;
+    right: 60px;
+    bottom: 7px;
+    color: white;
+    background-color: #248A83;
+    padding: 7px 20px;
+    font-size: 16px; }
+  .journal-page .entry-content {
+    margin-right: 18vh;
+    color: red; }
 
 .main-navigation {
   display: -webkit-box;
@@ -828,11 +898,37 @@ object {
   grid-template-rows: 25% 25% 25% 25%;
   border: 1px solid #e1e1e1; }
 
-.email-info {
-  color: red; }
-  .email-info .required {
-    color: red; }
-    .email-info .required .input-type {
-      background-color: red; }
-      .email-info .required .input-type .your-name {
-        background-color: red; }
+.post-type-archive-product img {
+  width: 100%;
+  height: 100%; }
+
+.blog .content-area, .page-template-default .content-area {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 0 auto;
+  padding-bottom: 10vh; }
+
+.blog .site-content, .page-template-default .site-content {
+  width: 1120px;
+  margin: 0 auto; }
+
+.blog .site-main, .page-template-default .site-main {
+  border-right: 1px solid #f4f4f4; }
+
+.find-us input {
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1; }
+
+.find-us input[type=submit] {
+  color: white;
+  background: #248a83;
+  text-transform: uppercase;
+  padding: .75rem 1.5rem;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.find-us textarea {
+  background-color: #f4f4f4; }
+
+.find-us-page figure {
+  margin: 0; }

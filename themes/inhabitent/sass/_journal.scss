@@ -1,8 +1,17 @@
 .journal-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: auto;
+
   .entry-header {
     position: relative;
     max-width: 700px;
-    margin: auto;
+    a {
+      color: white;
+      background-color: $color_title_bg;
+      text-transform: uppercase;
+      padding: 10px 20px;
+    }
   }
 
   .entry-title {
@@ -18,13 +27,8 @@
     padding: 7px 20px;
     font-size: 16px;
   }
-  // img {
-  //   width: 100%;
-  // }
-  a {
-    color: white;
-    background-color: $color_title_bg;
-    text-transform: uppercase;
-    padding: 10px 20px;
-  }
+.entry-content {
+  margin-right: 18vh;
+  color:red;
+}
 }
