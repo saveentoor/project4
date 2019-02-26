@@ -1,16 +1,17 @@
-.blog, .page-template-default{
+.blog, .page-template-about-page, .page-id-30{
 .content-area{
   display: grid;
   grid-template-columns: 3fr 1fr;
   margin: 0 auto;
   padding-bottom: 10vh;
 }
-.site-content{
+.find-us-page{
     width:1120px;
     margin: 0 auto;
 }
 .site-main{
   border-right: 1px solid #f4f4f4;
+  padding-left: 10vh;
 }
 }
 .find-us {

@@ -2,15 +2,13 @@
   display: flex;
   justify-content: flex-end;
   color: white;
-
-
+  
 }
   .tent-logo {
     height: 3em;
     width: 3rem;
-
-.site-header {
-    position: absolute;
-    }
   }
-
+  .site-header {
+   
+    display: flex;
+    }

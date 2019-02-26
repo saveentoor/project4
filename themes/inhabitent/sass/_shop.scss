@@ -1,12 +1,15 @@
 .product-icons {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
-    border: 1px solid #e1e1e1;
-}
-.post-type-archive-product {
-    img{
-        width:100%;
-        height: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+  border: 1px solid #e1e1e1;
+
+  .image-wrapper {
+    overflow: hidden;
+    position: relative;
+
+    img {
+      height: 250px;
     }
+  }
 }
