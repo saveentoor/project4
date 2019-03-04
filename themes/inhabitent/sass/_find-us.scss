@@ -1,38 +1,39 @@
-.blog, .page-template-about-page, .page-id-30{
-.content-area{
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  margin: 0 auto;
-  padding-bottom: 10vh;
-}
-.find-us-page{
-    width:1120px;
+// .blog,
+// .page-template-about-page,
+// .page-id-30 {
+  .content-area {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     margin: 0 auto;
-}
-.site-main{
-  border-right: 1px solid #f4f4f4;
-  padding-left: 10vh;
-}
-}
+    padding-bottom: 10vh;
+  }
+  .find-us-page {
+    width: 1120px;
+    margin: 0 auto;
+  }
+  .site-main {
+    border-right: 1px solid #f4f4f4;
+    padding-left: 10vh;
+  }
+//}
 .find-us {
-  input{
+  input {
     background-color: #f4f4f4;
     border: 1px solid #e1e1e1;
-
   }
- 
-  input[type=submit] {
+
+  input[type='submit'] {
     color: white;
     background: #248a83;
     text-transform: uppercase;
-    padding: .75rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     box-shadow: none;
   }
-textarea{
-  background-color: #f4f4f4;
+  textarea {
+    background-color: #f4f4f4;
+  }
 }
-}
-.find-us-page{
+.find-us-page {
   figure {
     margin: 0;
   }
