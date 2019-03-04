@@ -466,7 +466,7 @@ a {
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #f0e4d1; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -830,7 +830,6 @@ object {
           justify-content: space-between;
   text-align: center; }
   .home .product-types-container .product-type-item {
-    border: 1px solid #e1e1e1;
     border-top-width: 5px;
     -webkit-box-flex: 1;
         -ms-flex: 1 0 20%;
@@ -877,7 +876,6 @@ object {
             flex-direction: column;
     max-width: 30%;
     height: 450px;
-    border: 1px solid #e1e1e1;
     text-decoration: none;
     text-align: left; }
     .front-page-journal li .entry-meta-wrapper {
@@ -894,7 +892,7 @@ object {
         text-decoration: none;
         font-weight: bold;
         font-size: 1.3rem; }
-    .front-page-journal li a.green-btn {
+    .front-page-journal li a.green-button {
       border: 1px solid black;
       color: black;
       text-transform: uppercase;
@@ -903,7 +901,7 @@ object {
       text-align: center;
       padding: 0.5rem 1.75rem;
       bottom: 0; }
-      .front-page-journal li a.green-btn:hover {
+      .front-page-journal li a.green-button:hover {
         background-color: #248A83;
         color: #fff; }
   .front-page-journal h2.entry-title {
@@ -912,25 +910,128 @@ object {
     padding-top: 0px; }
   .front-page-journal img {
     height: 250px;
+    width: 100%; }
+  .front-page-journal .adventure-wrapper {
+    padding: 5%; }
+    .front-page-journal .adventure-wrapper .adventure-title {
+      text-align: center;
+      font-family: 'Novecento';
+      margin-bottom: 3.75rem;
+      font-weight: 400;
+      font-size: 2.4rem;
+      text-transform: uppercase; }
+  .front-page-journal .adventure-pannels {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
-    border-bottom: 5px solid #e1e1e1; }
+    height: 600px;
+    font-family: 'Merriweather'; }
+    .front-page-journal .adventure-pannels .story-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .front-page-journal .adventure-pannels a {
+      text-decoration: none; }
+      .front-page-journal .adventure-pannels a .read {
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.5rem 1.1rem; }
+    .front-page-journal .adventure-pannels .canoe-girl {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat center;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/canoe-girl.jpg") no-repeat center;
+      background-size: cover;
+      height: 600px;
+      width: 50%;
+      margin-right: 10px;
+      position: relative;
+      font-size: 3rem;
+      padding: 2%;
+      text-transform: capitalize; }
+      .front-page-journal .adventure-pannels .canoe-girl a:visited {
+        color: #fff; }
+        .front-page-journal .adventure-pannels .canoe-girl a:visited:hover {
+          color: #f0e4d1; }
+    .front-page-journal .adventure-pannels .adventure-right {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 50%; }
+      .front-page-journal .adventure-pannels .adventure-right .beach-bonfire {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat center;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/beach-bonfire.jpg") no-repeat center;
+        background-size: cover;
+        height: 300px;
+        margin-bottom: 10px;
+        position: relative;
+        font-size: 2.4rem;
+        padding: 2%;
+        text-transform: capitalize; }
+        .front-page-journal .adventure-pannels .adventure-right .beach-bonfire a:visited {
+          color: #fff; }
+          .front-page-journal .adventure-pannels .adventure-right .beach-bonfire a:visited:hover {
+            color: #f0e4d1; }
+      .front-page-journal .adventure-pannels .adventure-right .adventure-bottom {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-bottom: 10px; }
+        .front-page-journal .adventure-pannels .adventure-right .adventure-bottom .mountain-hikers {
+          background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat center;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/mountain-hikers.jpg") no-repeat center;
+          background-size: cover;
+          height: 300px;
+          width: 320px;
+          position: relative;
+          font-size: 1.6rem;
+          padding: 2%;
+          text-transform: capitalize; }
+          .front-page-journal .adventure-pannels .adventure-right .adventure-bottom .mountain-hikers a:visited {
+            color: #fff; }
+            .front-page-journal .adventure-pannels .adventure-right .adventure-bottom .mountain-hikers a:visited:hover {
+              color: #f0e4d1; }
+        .front-page-journal .adventure-pannels .adventure-right .adventure-bottom .night-sky {
+          background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/night-sky.jpg") no-repeat center;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/night-sky.jpg") no-repeat center;
+          background-size: cover;
+          height: 300px;
+          width: 320px;
+          margin-left: 10px;
+          position: relative;
+          font-size: 1.6rem;
+          padding: 2%;
+          text-transform: capitalize; }
+          .front-page-journal .adventure-pannels .adventure-right .adventure-bottom .night-sky a:visited {
+            color: #fff; }
+            .front-page-journal .adventure-pannels .adventure-right .adventure-bottom .night-sky a:visited:hover {
+              color: #f0e4d1; }
 
-.journal-page {
+.journal-page, .single-post {
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin: auto; }
-  .journal-page .entry-header {
+  .journal-page .entry-header, .single-post .entry-header {
     position: relative;
     max-width: 700px; }
-    .journal-page .entry-header a {
+    .journal-page .entry-header a, .single-post .entry-header a {
       color: white;
       background-color: #248A83;
       text-transform: uppercase;
       padding: 10px 20px; }
-  .journal-page .entry-title {
+  .journal-page .entry-title, .single-post .entry-title {
     position: absolute;
     top: 0; }
-  .journal-page .entry-meta {
+  .journal-page .entry-meta, .single-post .entry-meta {
     position: absolute;
     right: 60px;
     bottom: 7px;
@@ -938,7 +1039,7 @@ object {
     background-color: #248A83;
     padding: 7px 20px;
     font-size: 16px; }
-  .journal-page .entry-content {
+  .journal-page .entry-content, .single-post .entry-content {
     margin-right: 18vh; }
 
 .main-navigation {
@@ -971,15 +1072,19 @@ object {
           justify-content: center; }
 
 .product-icons {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 25% 25% 25% 25%;
-  border: 1px solid #e1e1e1; }
-  .product-icons .image-wrapper {
-    overflow: hidden;
-    position: relative; }
-    .product-icons .image-wrapper img {
-      height: 250px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .product-icons article {
+    width: 25%; }
+    .product-icons article img {
+      height: 200px; }
 
 .blog .content-area, .page-template-about-page .content-area, .page-id-30 .content-area {
   display: grid;

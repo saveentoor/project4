@@ -6,8 +6,6 @@
         <?php endif; ?>
         <?php the_title( '<p class="product-title">', '</p>' ); ?>
 
-        <span class="dots"> ..........</span>
-
  <p><?php echo CFS()->get( 'product_price' ); ?></p>
 </div>
     <footer class="product-footer">
