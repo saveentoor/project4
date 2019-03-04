@@ -1,13 +1,12 @@
-
-  .hero-image-header {
-    height: 100vh;
-    text-transform: uppercase;
-    color: white;
-    align-items: center;
-    justify-content: center;
-  }
-  .page-template-about .entry-content>:not(header) {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
+.hero-image-header {
+  height: 100vh;
+  text-transform: uppercase;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.entry-content > :not(header) {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
 }

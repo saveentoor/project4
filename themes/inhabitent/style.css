@@ -1016,30 +1016,31 @@ object {
             .front-page-journal .adventure-pannels .adventure-right .adventure-bottom .night-sky a:visited:hover {
               color: #f0e4d1; }
 
-.type-post .entry-header {
-  position: relative;
-  max-width: 700px; }
-  .type-post .entry-header a {
+.journal-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: auto; }
+  .journal-page .entry-header {
+    position: relative;
+    max-width: 700px; }
+    .journal-page .entry-header a {
+      color: white;
+      background-color: #248A83;
+      text-transform: uppercase;
+      padding: 10px 20px; }
+  .journal-page .entry-title {
+    position: absolute;
+    top: 0; }
+  .journal-page .entry-meta {
+    position: absolute;
+    right: 60px;
+    bottom: 7px;
     color: white;
     background-color: #248A83;
-    text-transform: uppercase;
-    padding: 10px 20px; }
-
-.type-post .entry-title {
-  position: absolute;
-  top: 0; }
-
-.type-post .entry-meta {
-  position: absolute;
-  right: 60px;
-  bottom: 7px;
-  color: white;
-  background-color: #248A83;
-  padding: 7px 20px;
-  font-size: 16px; }
-
-.type-post .entry-content {
-  margin-right: 55vh; }
+    padding: 7px 20px;
+    font-size: 16px; }
+  .journal-page .entry-content {
+    margin-right: 55vh; }
 
 .main-navigation {
   display: -webkit-box;
@@ -1070,7 +1071,7 @@ object {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.page-template-about .entry-content > :not(header) {
+.entry-content > :not(header) {
   margin-left: auto;
   margin-right: auto;
   max-width: 800px; }
@@ -1090,25 +1091,47 @@ object {
     .product-icons article img {
       height: 200px; }
 
-.content-area {
+.product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase; }
+
+.product-info-container {
+  text-align: center; }
+
+.blog .content-area,
+.page-template-about-page .content-area,
+.page-id-30 .content-area {
   display: grid;
   grid-template-columns: 3fr 1fr;
   margin: 0 auto;
   padding-bottom: 10vh; }
 
-.find-us-page {
+.blog .find-us-page,
+.page-template-about-page .find-us-page,
+.page-id-30 .find-us-page {
   width: 1120px;
   margin: 0 auto; }
 
-.site-main {
+.blog .site-main,
+.page-template-about-page .site-main,
+.page-id-30 .site-main {
   border-right: 1px solid #f4f4f4;
   padding-left: 10vh; }
 
-.find-us input {
+.blog .find-us input,
+.page-template-about-page .find-us input,
+.page-id-30 .find-us input {
   background-color: #f4f4f4;
   border: 1px solid #e1e1e1; }
 
-.find-us input[type='submit'] {
+.blog .find-us input[type='submit'],
+.page-template-about-page .find-us input[type='submit'],
+.page-id-30 .find-us input[type='submit'] {
   color: white;
   background: #248a83;
   text-transform: uppercase;
@@ -1116,8 +1139,12 @@ object {
   -webkit-box-shadow: none;
           box-shadow: none; }
 
-.find-us textarea {
+.blog .find-us textarea,
+.page-template-about-page .find-us textarea,
+.page-id-30 .find-us textarea {
   background-color: #f4f4f4; }
 
-.find-us-page figure {
+.blog .find-us-page figure,
+.page-template-about-page .find-us-page figure,
+.page-id-30 .find-us-page figure {
   margin: 0; }

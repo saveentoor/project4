@@ -1,8 +1,9 @@
-// .journal-page, .single-post,
-.type-post {
-  // display: grid;
-  // grid-template-columns: 2fr 1fr;
-  // margin: auto;
+.journal-page {
+// .single-post,
+// .type-post {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: auto;
 
   .entry-header {
     position: relative;
@@ -32,5 +33,5 @@
   margin-right: 55vh;
   
 }
-}
 
+}

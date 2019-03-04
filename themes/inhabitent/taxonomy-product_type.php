@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying taxonomy pages.
  *
  * @package Inhabitent
  */

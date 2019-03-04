@@ -1,6 +1,6 @@
-// .blog,
-// .page-template-about-page,
-// .page-id-30 {
+.blog,
+.page-template-about-page,
+.page-id-30 {
   .content-area {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -15,7 +15,6 @@
     border-right: 1px solid #f4f4f4;
     padding-left: 10vh;
   }
-//}
 .find-us {
   input {
     background-color: #f4f4f4;
@@ -37,4 +36,5 @@
   figure {
     margin: 0;
   }
+}
 }
