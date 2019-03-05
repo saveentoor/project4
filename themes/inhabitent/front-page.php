@@ -74,6 +74,46 @@ onClick="document.location.href='<?php echo esc_url( get_term_link($product))?>'
     wp_reset_postdata(); ?>
     </ul>
 
+    <section class=" adventure-wrapper">
+    <p class="adventure-title"> Latest Adventures </p>
+    <div class="adventure-pannels">
+        <div class="canoe-girl">
+            <div class="story-info">
+                <a href="#" class="canoe-text">Getting back to nature in a canoe</a>
+                <a href="#"><span class="read">Read More</span></a>
+            </div>
+        </div>
+       
+        <div class="adventure-right">
+            <div class="beach-bonfire">
+                <div class="story-info">
+                    <a href="#" class="" beach-text"">A night with friends at the beach</a>
+                    <a href="#"><span class="read">Read More</span></a>
+                </div>
+            
+            <div class="adventure-bottom">
+                <div class="mountain-hikers">
+                    <div class="story-info">
+                        <a href="#" class="bottom-adv-text">Taking in the view at big mountain</a>
+                        <a href="#"><span class="read">Read More</span></a>
+                    </div><!-- story info -->
+                </div>
+                <!--mountain hikers-->
+                <div class="night-sky">
+                    <div class="story-info">
+                        <a href="#" class="bottom-adv-text">Star-gazing at the night sky</a>
+                        <a href="#"><span class="read">Read More</span></a>
+                    </div>
+                    <!--story info-->
+                </div>
+                <!--night sky-->
+            </div>
+            <!--adventure-bottom-->
+        </div><!-- adventure-right-->
+    </div><!-- adventure pannels -->
+</section><!-- adventure wrapper -->
+
+
     <?php endif ?>
 </section>
 
