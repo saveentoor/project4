@@ -465,7 +465,7 @@ textarea {
 a {
   color: #248A83; }
   a:visited {
-    color: purple; }
+    color: #fff; }
   a:hover, a:focus, a:active {
     color: #f0e4d1; }
   a:focus {
@@ -828,6 +828,7 @@ object {
           justify-content: space-between;
   text-align: center; }
   .home .product-types-container .product-type-item {
+    border: 1px solid #e1e1e1;
     border-top-width: 5px;
     -webkit-box-flex: 1;
         -ms-flex: 1 0 20%;
@@ -1086,7 +1087,10 @@ object {
   .product-icons article {
     width: 25%; }
     .product-icons article img {
-      height: 200px; }
+      height: 260px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%; }
 
 .product-type-blocks {
   display: -webkit-box;
