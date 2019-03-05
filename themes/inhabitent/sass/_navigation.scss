@@ -26,11 +26,11 @@ a {
 
 /* Menus */
 
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%;
+// .main-navigation {
+//   clear: both;
+//   display: block;
+//   float: left;
+//   width: 100%;
 
   ul {
     display: none;
@@ -93,7 +93,7 @@ a {
   .current-menu-item > a,
   .current_page_ancestor > a {
   }
-}
+
 
 /* Small menu. */
 .menu-toggle,

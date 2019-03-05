@@ -1,14 +1,15 @@
-.main-navigation {
-  display: flex;
-  justify-content: flex-end;
-  color: white;
-  
-}
+
   .tent-logo {
     height: 3em;
     width: 3rem;
   }
   .site-header {
-   
+  
     display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    margin: 0 auto;
+    }
+    .site-branding {
+      display: none;
     }
