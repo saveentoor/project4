@@ -1041,6 +1041,11 @@ object {
   margin: 0 auto;
   position: absolute; }
   .site-header .search-sumbit {
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    color: white;
     float: left; }
   .site-header .main-navigation {
     display: -webkit-box;
@@ -1049,7 +1054,8 @@ object {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    text-transform: uppercase; }
     .site-header .main-navigation .menu-main-nav-container {
       padding-top: 10px; }
       .site-header .main-navigation .menu-main-nav-container li {
@@ -1057,6 +1063,18 @@ object {
 
 .site-branding {
   display: none; }
+
+header button {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  color: white; }
+  header button:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  header button:focus {
+    outline: none; }
 
 .hero-image-header {
   height: 100vh;
