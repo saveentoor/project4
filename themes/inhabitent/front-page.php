@@ -73,33 +73,33 @@ onClick="document.location.href='<?php echo esc_url( get_term_link($product))?>'
         <?php endforeach;
     wp_reset_postdata(); ?>
     </ul>
-
-    <section class=" adventure-wrapper">
     <p class="adventure-title"> Latest Adventures </p>
+    <section class=" adventure-wrapper">
+    
     <div class="adventure-pannels">
-        <div class="canoe-girl">
+        <div class="canoe-girl each-grid">
             <div class="story-info">
-                <a href="#" class="canoe-text">Getting back to nature in a canoe</a>
-                <a href="#"><span class="read">Read More</span></a>
+                <a href='<?php echo esc_url(get_permalink()) ?>' class="canoe-text">Getting back to nature in a canoe</a>
+                <a href='<?php echo esc_url(get_permalink()) ?>'><span class="read">Read More</span></a>
             </div>
         </div>
        
-        <div class="adventure-right">
-            <div class="beach-bonfire">
+    
+            <div class="beach-bonfire each-grid">
                 <div class="story-info">
-                    <a href="#" class="" beach-text"">A night with friends at the beach</a>
-                    <a href="#"><span class="read">Read More</span></a>
+                    <a href='<?php echo esc_url(get_permalink()) ?>' class= "beach-text">A night with friends at the beach</a>
+                    <a href='<?php echo esc_url(get_permalink()) ?>'><span class="read">Read More</span></a>
                 </div>
-            
-            <div class="adventure-bottom">
-                <div class="mountain-hikers">
+</div>
+           
+                <div class="mountain-hikers each-grid">
                     <div class="story-info">
                         <a href="#" class="bottom-adv-text">Taking in the view at big mountain</a>
-                        <a href="#"><span class="read">Read More</span></a>
+                        <a href='<?php echo esc_url(get_permalink()) ?>'><span class="read">Read More</span></a>
                     </div><!-- story info -->
                 </div>
                 <!--mountain hikers-->
-                <div class="night-sky">
+                <div class="night-sky each-grid">
                     <div class="story-info">
                         <a href="#" class="bottom-adv-text">Star-gazing at the night sky</a>
                         <a href="#"><span class="read">Read More</span></a>
@@ -107,9 +107,8 @@ onClick="document.location.href='<?php echo esc_url( get_term_link($product))?>'
                     <!--story info-->
                 </div>
                 <!--night sky-->
-            </div>
-            <!--adventure-bottom-->
-        </div><!-- adventure-right-->
+        
+      
     </div><!-- adventure pannels -->
 </section><!-- adventure wrapper -->
 

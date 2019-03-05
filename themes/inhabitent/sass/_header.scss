@@ -1,15 +1,32 @@
-
-  .tent-logo {
-    height: 3em;
-    width: 3rem;
+.tent-logo {
+  height: 3em;
+  width: 3rem;
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  width: 1120px;
+  margin: 0 auto;
+  position: absolute;
+  .search-sumbit {
+    float: left;
   }
-  .site-header {
-  
+  .main-navigation {
     display: flex;
-    justify-content: space-between;
-    width: 1120px;
-    margin: 0 auto;
+    flex-direction: row;
+    
+    .menu-main-nav-container {
+      padding-top:10px ;
+      li {
+        padding: 5px;
+      }
     }
-    .site-branding {
-      display: none;
-    }
+    // fieldset {
+    //   display: flex;
+    //   flex-direction: row-reverse;
+    // }
+  }
+}
+.site-branding {
+  display: none;
+}

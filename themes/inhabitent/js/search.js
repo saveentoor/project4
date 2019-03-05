@@ -1,7 +1,7 @@
-(function($) {
-
+  jQuery(document).ready(function( $ ) {
     let $seachInput = $('.main-navigation .search-field');
     $seachInput.hide();
+    console.log(123);
   
     $('.main-navigation .search-submit').on('click', function(evt) {
       evt.preventDefault();
@@ -19,4 +19,4 @@
     $seachInput.on('blur', function() {
       $seachInput.hide(500);
     });
-  })(jQuery);
+  });

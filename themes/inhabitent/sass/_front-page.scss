@@ -121,152 +121,29 @@
 
 //adventure
 
-.adventure-wrapper {
-  padding: 5%;
-  .adventure-title {
-    text-align: center;
-    font-family: 'Novecento';
-    margin-bottom: 3.75rem;
-    font-weight: 400;
-    font-size: 2.4rem;
-    text-transform: uppercase;
-    // letter-spacing: 2px;
-  }
-}
-.adventure-pannels {
-  display: flex;
-  width: 100%;
-  height: 600px;
-  font-family: 'Merriweather';
-
-  .story-info {
-    display: flex;
-    flex-direction: column;
-  }
-  a {
-    text-decoration: none;
-    .read {
-      // border: 1px solid #fff;
-      color: #fff;
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 1rem;
-      padding: 0.5rem 1.1rem;
-    }
-  }
-  .canoe-girl {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url('../../images/adventure-photos/canoe-girl.jpg') no-repeat center;
-    background-size: cover;
-    height: 600px;
-    width: 50%;
-    margin-right: 10px;
-    position: relative;
-    font-size: 3rem;
-    padding: 2%;
-    text-transform: capitalize;
-    a:visited {
-      color: #fff;
-      &:hover {
-        color: #f0e4d1;
-      }
-    }
-  }
-  .adventure-right {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    .beach-bonfire {
-      background: linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0.4),
-          rgba(0, 0, 0, 0.4)
-        ),
-        url('../../images/adventure-photos/beach-bonfire.jpg') no-repeat center;
-      background-size: cover;
-      height: 300px;
-      margin-bottom: 10px;
-      position: relative;
-      font-size: 2.4rem;
-      padding: 2%;
-      text-transform: capitalize;
-      a:visited {
-        color: #fff;
-        &:hover {
-          color: #f0e4d1;
-        }
-      }
-    }
-    .adventure-bottom {
-      display: flex;
-      padding-bottom: 10px;
-      .mountain-hikers {
-        background: linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.4)
-          ),
-          url('../../images/adventure-photos/mountain-hikers.jpg') no-repeat
-            center;
-        background-size: cover;
-        height: 300px;
-        width: 320px;
-        position: relative;
-        font-size: 1.6rem;
-        padding: 2%;
-        text-transform: capitalize;
-        a:visited {
-          color: #fff;
-          &:hover {
-            color: #f0e4d1;
-          }
-        }
-      }
-      .night-sky {
-        background: linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.4)
-          ),
-          url('../../images/adventure-photos/night-sky.jpg') no-repeat center;
-        background-size: cover;
-        height: 300px;
-        width: 320px;
-        margin-left: 10px;
-        position: relative;
-        font-size: 1.6rem;
-        padding: 2%;
-        text-transform: capitalize;
-        a:visited {
-          color: #fff;
-          &:hover {
-            color: #f0e4d1;
-          }
-        }
-      }   
-    }
-  }
-}
-}
-//adventure
 
 .adventure-wrapper {
-  padding: 5%;
-  .adventure-title {
-    text-align: center;
-    font-family: 'Novecento';
-    margin-bottom: 3.75rem;
-    font-weight: 400;
-    font-size: 2.4rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
+  // padding: 5%;
+  
+  
+  // .adventure-title {
+  //   text-align: center;
+  //   font-family: 'Novecento';
+  //   margin-bottom: 3.75rem;
+  //   font-weight: 400;
+  //   font-size: 2.4rem;
+  //   text-transform: uppercase;
+  //   letter-spacing: 2px;
+  // }
 }
 .adventure-pannels {
+  margin: auto;
   width: 100%;
-  height: 600px;
-  display: flex;
-  font-family: 'Merriweather';
+  height: 50vw;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   .story-info {
     display: flex;
     flex-direction: column;
@@ -282,16 +159,48 @@
       padding: 0.5rem 1.1rem;
     }
   }
+
+  .each-grid{
+    width: 100%;
+    height: 100%;
+    &:nth-of-type(1) {
+      grid-column: 1/ 3;
+      grid-row: 1 / 3;
+      h3 {
+        font-size: 3rem;
+      }
+    }
+    &:nth-of-type(2) {
+      grid-column: 3 / 5;
+      grid-row: 1;
+      h3 {
+        font-size: 2.4rem;
+      }
+    }
+    &:nth-of-type(3) {
+      grid-column: 3;
+      grid-row: 2;
+      h3 {
+        font-size: 1.6rem;
+      }
+    }
+    &:nth-of-type(4) {
+      grid-column: 4;
+      grid-row: 2;
+      h3 {
+        font-size: 1.6rem;
+      }
+    }
+
+  }
   .canoe-girl {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url('../../images/adventure-photos/canoe-girl.jpg') no-repeat center;
     background-size: cover;
-    height: 600px;
-    width: 50%;
-    margin-right: 10px;
-    position: relative;
+  
+   
     font-size: 3rem;
-    padding: 2%;
+  
     text-transform: capitalize;
     a:visited {
       color: #fff;
@@ -300,10 +209,7 @@
       }
     }
   }
-  .adventure-right {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+  
     .beach-bonfire {
       background: linear-gradient(
           180deg,
@@ -312,11 +218,10 @@
         ),
         url('../../images/adventure-photos/beach-bonfire.jpg') no-repeat center;
       background-size: cover;
-      height: 300px;
-      margin-bottom: 10px;
-      position: relative;
+     
+   
       font-size: 2.4rem;
-      padding: 2%;
+    
       text-transform: capitalize;
       a:visited {
         color: #fff;
@@ -325,9 +230,7 @@
         }
       }
     }
-    .adventure-bottom {
-      display: flex;
-      padding-bottom: 10px;
+    
       .mountain-hikers {
         background: linear-gradient(
             180deg,
@@ -337,11 +240,9 @@
           url('../../images/adventure-photos/mountain-hikers.jpg') no-repeat
             center;
         background-size: cover;
-        height: 300px;
-        width: 320px;
-        position: relative;
+       
         font-size: 1.6rem;
-        padding: 2%;
+       
         text-transform: capitalize;
         a:visited {
           color: #fff;
@@ -358,12 +259,9 @@
           ),
           url('../../images/adventure-photos/night-sky.jpg') no-repeat center;
         background-size: cover;
-        height: 300px;
-        width: 320px;
-        margin-left: 10px;
-        position: relative;
+       
         font-size: 1.6rem;
-        padding: 2%;
+      
         text-transform: capitalize;
         a:visited {
           color: #fff;
@@ -372,6 +270,6 @@
           }
         }
       }
-    }
-  }
+    
+  
 }
