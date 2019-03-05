@@ -4,9 +4,12 @@
         <?php if ( has_post_thumbnail() ) : ?>
             <?php the_post_thumbnail( 'medium' ); ?>
         <?php endif; ?>
-        <?php the_title( '<p class="product-title">', '</p>' ); ?>
-
- <p><?php echo CFS()->get( 'product_price' ); ?></p>
+       
+<dl>
+  <?php the_title( '<p class="product-title">', '</p>' ); ?>
+  <dd><?php echo CFS()->get( 'product_price' ); ?></dd>
+</dl>
+       
 </div>
     <footer class="product-footer">
         <?php red_starter_entry_footer(); ?>

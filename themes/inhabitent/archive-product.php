@@ -46,7 +46,7 @@ get_header(); ?>
 				
 				<?php while ( have_posts() ) : the_post(); ?>
 				<article>
-					<a href="<?php echo get_permalink()?>">
+					<a href="<?php echo esc_url(get_permalink())?>">
 					<?php
 					get_template_part( 'template-parts/content', 'products' );
 					?>

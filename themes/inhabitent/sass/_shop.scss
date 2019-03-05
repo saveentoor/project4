@@ -33,5 +33,10 @@
 .product-info-container{
   text-align: center;
 }
-
-
+.image-wrapper{
+  dl { width: 100% }
+  p { float: left; width: 70%; overflow: hidden; white-space: nowrap }
+  
+  
+  p:after { content: " .................................................................................." }
+}
