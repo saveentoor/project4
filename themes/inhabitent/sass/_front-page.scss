@@ -5,6 +5,8 @@
   background-size: auto, cover;
   background-position: center, center;
   height: 700px;
+  // filter: brightness(60%);
+  object-fit: cover;
 }
 
 .home {

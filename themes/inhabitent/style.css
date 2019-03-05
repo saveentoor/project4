@@ -806,7 +806,9 @@ object {
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
   background-position: center, center;
-  height: 700px; }
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .home .entry-header {
   position: relative; }

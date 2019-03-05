@@ -15,7 +15,33 @@
 
 	<?php wp_head(); ?>
 	</head>
+<!-- the header text color change on some pages -->
+<?php $thispage = basename(get_permalink()); ?>
+            
+            <?php if ($thispage === "project4" || $thispage === "about"): ?>
+            <?php $logo_url = get_template_directory_uri() . '/images/inhabitent-logo-tent-white.svg'; ?>
+            <?php else: ?>
+            <?php $logo_url = get_template_directory_uri() . '/images/inhabitent-logo-tent.svg'; ?>
+            <style>
+                nav a,
+                nav i {
+                    color: #248A83 !important;
+                }
 
+                nav li:hover,
+                nav button:hover {
+                    color: black !important;
+                }
+
+                fieldset input::placeholder {
+                    color: #a1a1a1;
+                }
+                fieldset input{
+                    color: black;
+                }
+                
+            </style>
+            <?php endif ?>
 
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
@@ -28,7 +54,7 @@
 
 				<!-- Tent Logo -->
 				<div class="tent-logo">
-				<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-tent.svg" /></a>
+				<a href="<?php echo esc_url(home_url('/')); ?>"><img src=<?php echo $logo_url?> /></a>
 				</div>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
