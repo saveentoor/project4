@@ -18,27 +18,12 @@ get_header(); ?>
 
 			</header>
 			<section class="product-info-container">
-            <h2>Shop Stuff</h2>
-            <?php
-            $terms = get_terms(array(
-                'taxonomy'   => 'product_type',
-                'hide_empty' => 0,
-            ));
-            if (!empty($terms)):
-                ?>
-            <div class="product-type-blocks">
-                <?php foreach ($terms as $term):
-                    ?>
-                <div class="product-type-block-wrapper">
-
-                    <p>
-                        <a href="<?php echo get_term_link($term); ?>">
-                            <?php echo $term->name; ?></a>
-                    </p>
-                </div>
-                <?php endforeach; ?>
-            </div>
-            <?php endif; ?>
+			<h1 class="page-title">
+        <?php single_cat_title(); ?>
+    </h1>
+	<?php
+    the_archive_description('<div class="taxonomy-description">', '</div>');
+    ?>
         </section>
 			<section class="product-icons">
 				<?php /* Start the Loop */ ?>
