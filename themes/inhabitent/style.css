@@ -1113,6 +1113,9 @@ h2 {
   letter-spacing: 2px;
   text-transform: uppercase; }
 
+.image-wrapper {
+  color: black; }
+
 .product-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1143,17 +1146,19 @@ h2 {
 .product-info-container {
   text-align: center; }
 
-.image-wrapper dl {
-  width: 100%; }
-
-.image-wrapper p {
-  float: left;
-  width: 70%;
-  overflow: hidden;
-  white-space: nowrap; }
-
-.image-wrapper p:after {
-  content: " .................................................................................."; }
+.image-wrapper {
+  padding-top: 20px; }
+  .image-wrapper dl {
+    width: 100%; }
+  .image-wrapper p {
+    float: left;
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap; }
+  .image-wrapper dd {
+    padding-top: 16px; }
+  .image-wrapper p:after {
+    content: " .................................................................................."; }
 
 .blog .content-area,
 .page-template-about-page .content-area,
@@ -1189,7 +1194,8 @@ h2 {
   text-transform: uppercase;
   padding: 0.75rem 1.5rem;
   -webkit-box-shadow: none;
-          box-shadow: none; }
+          box-shadow: none;
+  font-family: Novecento Sans Web,sans-serif; }
 
 .blog .find-us textarea,
 .page-template-about-page .find-us textarea,

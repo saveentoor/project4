@@ -12,8 +12,9 @@
   //   img {
   //     width:25%
   //   }
-  
-
+  .image-wrapper{
+  color:black;
+}
 .product-icons {
   display: flex;
   flex-direction: row;
@@ -31,13 +32,17 @@
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  
 }
 .product-info-container{
   text-align: center;
+  
 }
 .image-wrapper{
+  padding-top: 20px;
   dl { width: 100% }
   p { float: left; width: 70%; overflow: hidden; white-space: nowrap }
+  dd {padding-top: 16px;}
   
   
   p:after { content: " .................................................................................." }
