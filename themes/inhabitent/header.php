@@ -4,7 +4,6 @@
  *
  * @package Inhabitent
  */
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -27,12 +26,10 @@
                 nav i {
                     color: #248A83 !important;
                 }
-
                 nav li:hover,
                 nav button:hover {
                     color: black !important;
                 }
-
                 fieldset input::placeholder {
                     color: #a1a1a1;
                 }
@@ -65,11 +62,6 @@
 					<?php get_search_form(); ?>
 					</div>
 				</nav><!-- #site-navigation -->
-
-</div>
-</body>
 			</header><!-- #masthead -->
 
 			<!-- <div id="content" class="site-content"> -->
-
-			

@@ -14,37 +14,35 @@
     border: none;
     color: white;
     float: left;
-
   }
   .main-navigation {
     display: flex;
     flex-direction: row;
     text-transform: uppercase;
-    
+    justify-content: flex-end;
+
     .menu-main-nav-container {
-      padding-top:10px ;
+      padding-top: 10px;
       li {
         padding: 5px;
       }
     }
-    
   }
 }
 .site-branding {
   display: none;
 }
-header{
-  button{
+header {
+  button {
     background: transparent;
     box-shadow: none;
     border: none;
     color: white;
-    &:hover{
+    &:hover {
       box-shadow: none;
     }
-    &:focus{
-      outline:none;
+    &:focus {
+      outline: none;
     }
   }
-  
 }

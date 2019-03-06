@@ -7,21 +7,39 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<div id="primary" class="content-area content-single-product">
 		<main id="main" class="site-main" role="main">
-
+		
 		<?php while ( have_posts() ) : the_post(); ?>
+		<?php if ( has_post_thumbnail() ) : ?>
+			<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	
+		
+		<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 
-			<?php the_post_navigation(); ?>
+		<p class="single-price">
+            <?php echo CFS()->get('product_price'); ?>
+        </p>
+	
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+	<div class="entry-content-single-shop">
+		<?php the_content(); ?>
+		<div class="shop-button">
+		
+            <button class="facebook"><i class="fab fa-facebook-f"></i>LIKE</button>
+            <button class="facebook"> <i class="fab fa-twitter"></i>TWEET</button>
+            <button class="facebook"><i class="fab fa-pinterest-p"></i>PIN</button>
+        
+
+</div>
+	</div><!-- .entry-content -->
+
+	
+</article><!-- #post-## -->
+			
 		
 		<?php endwhile; // End of the loop. ?>
 

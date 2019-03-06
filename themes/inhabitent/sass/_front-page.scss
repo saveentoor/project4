@@ -16,7 +16,8 @@
 
   .entry-title {
     position: absolute;
-    top: 0;
+    // top: 0;
+    padding-top: 36px;
   }
   .shop-stuff-info {
     width: 1120px;
@@ -80,6 +81,7 @@
       height: 40%;
       padding: 12px;
       position: relative;
+      border: 1px solid #e1e1e1;
     }
     .entry-meta {
       font-size: 0.75rem;
