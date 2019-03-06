@@ -279,8 +279,16 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   clear: both; }
+
+h1 {
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+h2 {
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 /* Copy */
 p {
@@ -622,7 +630,11 @@ a {
   color: #404040; }
 
 h2 {
-  font-family: Novecento Sans Web,sans-serif; }
+  font-family: Novecento Sans Web,sans-serif;
+  font-weight: 400;
+  margin-bottom: 3.75rem;
+  text-align: center;
+  font-size: 2.4rem; }
 
 .day-of-week {
   font-family: Merriweather Web,serif; }
@@ -1094,6 +1106,13 @@ header button {
   margin-right: auto;
   max-width: 800px; }
 
+h1 {
+  letter-spacing: 2px; }
+
+h2 {
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
 .product-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1181,3 +1200,8 @@ header button {
 .page-template-about-page .find-us-page figure,
 .page-id-30 .find-us-page figure {
   margin: 0; }
+
+.info {
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  text-transform: uppercase; }

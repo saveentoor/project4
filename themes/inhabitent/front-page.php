@@ -73,7 +73,7 @@ onClick="document.location.href='<?php echo esc_url( get_term_link($product))?>'
         <?php endforeach;
     wp_reset_postdata(); ?>
     </ul>
-    <p class="adventure-title"> Latest Adventures </p>
+    <h2 class="adventure-title"> Latest Adventures </h2>
     <section class=" adventure-wrapper">
     
     <div class="adventure-pannels">
