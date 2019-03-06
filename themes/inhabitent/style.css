@@ -1045,6 +1045,16 @@ object {
     font-size: 16px; }
   .journal-page .entry-content {
     margin-right: 55vh; }
+  .journal-page .type-post {
+    margin-top: 50px; }
+
+.journal-readmore-button {
+  border: 1px solid black;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 1.75rem; }
 
 .tent-logo {
   height: 3em;
@@ -1086,6 +1096,9 @@ object {
 
 .site-branding {
   display: none; }
+
+header a {
+  color: white; }
 
 header button {
   background: transparent;
@@ -1151,9 +1164,12 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase; }
+  .product-type-blocks .product-type-block-wrapper {
+    padding: 0 15px; }
 
 .product-info-container {
-  text-align: center; }
+  text-align: center;
+  padding-top: 36px; }
 
 .image-wrapper {
   padding-top: 20px; }
@@ -1175,7 +1191,8 @@ h2 {
   display: grid;
   grid-template-columns: 3fr 1fr;
   margin: 0 auto;
-  padding-bottom: 10vh; }
+  padding-bottom: 10vh;
+  padding-top: 50px; }
 
 .blog .find-us-page,
 .page-template-about-page .find-us-page,

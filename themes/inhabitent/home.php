@@ -19,10 +19,12 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content' ); ?>
-
+				<a href="<?php echo get_permalink(); ?>" rel="bookmark" class="journal-readmore-button">Read More →</a>
+				
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
@@ -30,9 +32,10 @@ get_header(); ?>
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			
 
 		<?php endif; ?>
-
+	
 		</main><!-- #main -->
 		<?php get_sidebar(); ?>
 	</div><!-- #primary -->

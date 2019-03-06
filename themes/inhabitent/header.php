@@ -22,12 +22,12 @@
             <?php else: ?>
             <?php $logo_url = get_template_directory_uri() . '/images/inhabitent-logo-tent.svg'; ?>
             <style>
-                nav a,
-                nav i {
+                ul a,
+                ul i {
                     color: #248A83 !important;
                 }
-                nav li:hover,
-                nav button:hover {
+                ul li:hover,
+                ul button:hover {
                     color: black !important;
                 }
                 fieldset input::placeholder {
