@@ -3,7 +3,7 @@
 .page-id-30 {
   .content-area {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 2fr;
     margin: 0 auto;
     padding-bottom: 10vh;
     padding-top: 50px;
@@ -45,4 +45,7 @@
   font-size: 1.1rem;
   margin-bottom: .5rem; 
   text-transform: uppercase;
+}
+.widget-area{
+  padding-left: 10%;
 }

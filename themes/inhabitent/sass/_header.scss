@@ -8,6 +8,7 @@
   width: 100%;
   margin: 0 auto;
   position: absolute;
+  
   .search-sumbit {
     background: transparent;
     box-shadow: none;
@@ -20,7 +21,8 @@
     flex-direction: row;
     text-transform: uppercase;
     justify-content: flex-end;
-
+    border-bottom: 1px solid #f4f4f4;
+  
     .menu-main-nav-container {
       padding-top: 10px;
       li {

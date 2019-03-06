@@ -4,6 +4,7 @@
 
 .widget {
 	margin: 0 0 $base__space-unit;
+	
 
 	/* Make sure select elements fit in widgets. */
 	select {
@@ -33,7 +34,8 @@ h2{
 	font-weight: 400;
     margin-bottom: 3.75rem;
     text-align: center;
-    font-size: 2.4rem;
+	font-size: 2.4rem;
+	text-align: left;
 }
 .day-of-week{
 	font-family: Merriweather Web,serif;
