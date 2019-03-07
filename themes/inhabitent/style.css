@@ -808,6 +808,16 @@ object {
   -o-object-fit: cover;
      object-fit: cover; }
 
+h2 {
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 70px;
+  padding: 0.5rem 0.5rem;
+  line-height: 1.25; }
+
 .home .entry-header {
   position: relative; }
 

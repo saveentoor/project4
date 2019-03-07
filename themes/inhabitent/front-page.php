@@ -22,7 +22,7 @@ get_header(); ?>
 		'order' => 'ASC'
    )); ?>
    <div class="shop-stuff-info">
-	<h2 class="heading-show-stuff">SHOP STUFF</h2>
+	<h2>Shop stuff</h2>
 		<div class="product-types-container">
 			<?php foreach ($product_types as $product) : ?>
 			<div class="product-type-item">
