@@ -20,6 +20,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'search' ); ?>
+				<a href="<?php echo get_permalink(); ?>" rel="bookmark" class="search-readmore-button">Read More →</a>
 
 			<?php endwhile; ?>
 
