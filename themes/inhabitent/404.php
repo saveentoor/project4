@@ -10,13 +10,13 @@
 get_header(); ?>
 
 	
-	<div id="primary" class="content-area page404">
+	<div id="primary" class="content-area-page404">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
 					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
-				</header><!-- .page-header -->
+				</header>
 
 				<div class="page-content">
 					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
@@ -25,8 +25,8 @@ get_header(); ?>
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-					<?php if ( red_starter_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
+					<?php if ( red_starter_categorized_blog() ) : ?>
+					<div class="widget-categories">
 						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
 						<ul>
 						<?php
@@ -39,19 +39,17 @@ get_header(); ?>
 							) );
 						?>
 						</ul>
-					</div><!-- .widget -->
+					</div>
 					<?php endif; ?>
-
 					<?php
 						$archive_content = '<p>' . sprintf( esc_html( 'Try looking in the monthly archives. %1$s' ), convert_smilies( ':)' ) ) . '</p>';
 						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 					?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-		<?php get_sidebar(); ?>
-	</div><!-- #primary -->
-
+				</div>
+				
+			</section>
+			
+		</main>
+<?php get_sidebar(); ?>
+	</div> 
 <?php get_footer(); ?>

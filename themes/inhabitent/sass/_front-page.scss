@@ -141,9 +141,12 @@ h2{
   .story-info {
     display: flex;
     flex-direction: column;
+    margin: 1.5rem;
   }
   a {
     text-decoration: none;
+    font-family: Merriweather Web,serif;
+    font-weight: 400;
     .read {
       border: 1px solid #fff;
       color: #fff;
@@ -189,10 +192,7 @@ h2{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url('../../images/adventure-photos/canoe-girl.jpg') no-repeat center;
     background-size: cover;
-  
-   
     font-size: 3rem;
-  
     text-transform: capitalize;
     a:visited {
       color: #fff;

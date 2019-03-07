@@ -948,9 +948,12 @@ h2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin: 1.5rem; }
   .adventure-pannels a {
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: Merriweather Web,serif;
+    font-weight: 400; }
     .adventure-pannels a .read {
       border: 1px solid #fff;
       color: #fff;
@@ -1142,7 +1145,8 @@ header button {
   max-width: 800px; }
 
 h1 {
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  font-size: 2.4rem; }
 
 h2 {
   letter-spacing: 2px;
@@ -1160,7 +1164,9 @@ h2 {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  margin-right: 10%;
+  margin-left: 10%; }
   .product-icons article {
     width: 25%; }
     .product-icons article img {
@@ -1198,9 +1204,12 @@ h2 {
   .image-wrapper p:after {
     content: " .................................................................................."; }
 
+.shop-stuff-info h2 {
+  text-align: center; }
+
 .blog .content-area,
 .page-template-about-page .content-area,
-.page-id-30 .content-area {
+.page-id-30 .content-area, .search-results .content-area {
   display: grid;
   grid-template-columns: 3fr 2fr;
   margin: 0 auto;
@@ -1212,13 +1221,13 @@ h2 {
 
 .blog .find-us input,
 .page-template-about-page .find-us input,
-.page-id-30 .find-us input {
+.page-id-30 .find-us input, .search-results .find-us input {
   background-color: #f4f4f4;
   border: 1px solid #e1e1e1; }
 
 .blog .find-us input[type='submit'],
 .page-template-about-page .find-us input[type='submit'],
-.page-id-30 .find-us input[type='submit'] {
+.page-id-30 .find-us input[type='submit'], .search-results .find-us input[type='submit'] {
   color: white;
   background: #248a83;
   text-transform: uppercase;
@@ -1229,12 +1238,12 @@ h2 {
 
 .blog .find-us textarea,
 .page-template-about-page .find-us textarea,
-.page-id-30 .find-us textarea {
+.page-id-30 .find-us textarea, .search-results .find-us textarea {
   background-color: #f4f4f4; }
 
 .blog .find-us-page figure,
 .page-template-about-page .find-us-page figure,
-.page-id-30 .find-us-page figure {
+.page-id-30 .find-us-page figure, .search-results .find-us-page figure {
   margin: 0; }
 
 .info {
@@ -1286,8 +1295,37 @@ h3 {
   text-transform: uppercase;
   font-size: 2.4rem; }
 
-.page404 h2 {
-  text-align: left; }
+.error-404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .error-404 .site-main {
+    padding-right: 5%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 8%;
+    border-right: 1px solid #e1e1e1; }
+    .error-404 .site-main h2 {
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .error-404 .site-main .search-field {
+      text-transform: capitalize;
+      background-color: #f4f4f4;
+      width: 200px; }
+    .error-404 .site-main a {
+      text-decoration: none; }
+    .error-404 .site-main ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+  .error-404 .widget-area {
+    padding-left: 5%; }
+    .error-404 .widget-area h2 {
+      text-transform: uppercase; }
+  .error-404 h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2em; }
 
 .taxonomy-description {
   border-bottom: 1px dashed #c8c8c8;

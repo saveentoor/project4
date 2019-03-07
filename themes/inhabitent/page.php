@@ -16,11 +16,7 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
-		
-	
-	
-
-	<form action="find-us" method="post" class="find-us">
+	 <form action="find-us" method="post" class="find-us">
 
 <div class="info">
     <p class="name"><label>Name <span class="required">*</span></label><span class="your-name"><input type="text" name="your-name" value="" size="40"></span> </p>
@@ -29,12 +25,10 @@ get_header(); ?>
     <p class="message"><label>Message <span class="required">*</span></label><span class="your-message"><textarea name="your-message" cols="40" rows="10"></textarea></span> </p>
     <input type="submit" value="Submit" class="submit">
 </div>
-</form>
+</form> 
 </div>
 </main>
 
 <?php get_sidebar(); ?>
-
 	</div> 
-
 <?php get_footer(); ?>
