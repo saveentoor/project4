@@ -1073,6 +1073,9 @@ h2 {
   height: 3em;
   width: 3rem; }
 
+.page-template-about .site-header .main-navigation {
+  border: none; }
+
 .site-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1211,7 +1214,7 @@ h2 {
 
 .blog .content-area,
 .page-template-about-page .content-area,
-.page-id-30 .content-area, .search-results .content-area {
+.page-id-30 .content-area, .search-results .content-area, .error404 .content-area {
   display: grid;
   grid-template-columns: 3fr 2fr;
   margin: 0 auto;
@@ -1223,13 +1226,13 @@ h2 {
 
 .blog .find-us input,
 .page-template-about-page .find-us input,
-.page-id-30 .find-us input, .search-results .find-us input {
+.page-id-30 .find-us input, .search-results .find-us input, .error404 .find-us input {
   background-color: #f4f4f4;
   border: 1px solid #e1e1e1; }
 
 .blog .find-us input[type='submit'],
 .page-template-about-page .find-us input[type='submit'],
-.page-id-30 .find-us input[type='submit'], .search-results .find-us input[type='submit'] {
+.page-id-30 .find-us input[type='submit'], .search-results .find-us input[type='submit'], .error404 .find-us input[type='submit'] {
   color: white;
   background: #248a83;
   text-transform: uppercase;
@@ -1240,12 +1243,12 @@ h2 {
 
 .blog .find-us textarea,
 .page-template-about-page .find-us textarea,
-.page-id-30 .find-us textarea, .search-results .find-us textarea {
+.page-id-30 .find-us textarea, .search-results .find-us textarea, .error404 .find-us textarea {
   background-color: #f4f4f4; }
 
 .blog .find-us-page figure,
 .page-template-about-page .find-us-page figure,
-.page-id-30 .find-us-page figure, .search-results .find-us-page figure {
+.page-id-30 .find-us-page figure, .search-results .find-us-page figure, .error404 .find-us-page figure {
   margin: 0; }
 
 .info {
