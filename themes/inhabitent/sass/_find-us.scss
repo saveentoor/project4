@@ -42,6 +42,10 @@
   font-size: 1.1rem;
   margin-bottom: .5rem; 
   text-transform: uppercase;
+  p{
+    display: flex;
+    flex-direction: column;
+  }
 }
 .widget-area{
   padding-left: 40px;

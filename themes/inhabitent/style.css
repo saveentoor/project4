@@ -1171,7 +1171,8 @@ h2 {
   margin-right: 10%;
   margin-left: 10%; }
   .product-icons article {
-    width: 25%; }
+    width: 23%;
+    margin: 1%; }
     .product-icons article img {
       height: 260px;
       -o-object-fit: cover;
@@ -1255,6 +1256,14 @@ h2 {
   font-size: 1.1rem;
   margin-bottom: .5rem;
   text-transform: uppercase; }
+  .info p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
 
 .widget-area {
   padding-left: 40px;
