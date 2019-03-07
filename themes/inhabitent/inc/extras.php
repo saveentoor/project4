@@ -55,7 +55,7 @@ if ( is_admin() || ! $query->is_main_query() )
 
 		if(is_post_type_archive('product') || is_tax("product_type")) {
 		$query->set( 'orderby' ,'title');
-		$query->set( 'order', 'ASC');
+		$query->set( 'order', 'DESC');
 		$query->set( 'posts_per_page' ,'16');
 		return;
 		}

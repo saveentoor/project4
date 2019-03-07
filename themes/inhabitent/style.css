@@ -1014,21 +1014,28 @@ object {
 
 .journal-page {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin: auto; }
+  grid-template-columns: 3fr 2fr;
+  margin: 0 auto;
+  padding-bottom: 10vh;
+  padding-top: 50px;
+  max-width: 1120px;
+  grid-gap: 50px;
+  width: 90%; }
   .journal-page .entry-header {
-    position: relative;
-    max-width: 700px; }
+    position: relative; }
     .journal-page .entry-header a {
       color: white;
       background-color: #248A83;
-      text-transform: uppercase;
-      padding: 10px 20px; }
+      text-transform: uppercase; }
   .journal-page .entry-title {
     position: absolute;
     top: 0;
     display: block;
-    width: 80%; }
+    width: 80%;
+    padding: 10px;
+    max-width: 75%;
+    font-size: 2rem;
+    background-color: #248A83; }
   .journal-page .entry-meta {
     position: absolute;
     right: 60px;
@@ -1037,10 +1044,9 @@ object {
     background-color: #248A83;
     padding: 7px 20px;
     font-size: 16px; }
-  .journal-page .entry-content {
-    margin-right: 55vh; }
-  .journal-page .type-post {
-    margin-top: 50px; }
+
+.type-post {
+  margin-top: 50px; }
 
 .journal-readmore-button {
   border: 1px solid black;
@@ -1071,6 +1077,8 @@ object {
     border: none;
     color: white;
     float: left; }
+    .site-header .search-sumbit:hover {
+      color: #248A83; }
   .site-header .main-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1187,19 +1195,10 @@ h2 {
   grid-template-columns: 3fr 2fr;
   margin: 0 auto;
   padding-bottom: 10vh;
-  padding-top: 50px; }
-
-.blog .find-us-page,
-.page-template-about-page .find-us-page,
-.page-id-30 .find-us-page {
-  width: 1120px;
-  margin: 0 auto; }
-
-.blog .site-main,
-.page-template-about-page .site-main,
-.page-id-30 .site-main {
-  border-right: 1px solid #f4f4f4;
-  padding-left: 10vh; }
+  padding-top: 50px;
+  max-width: 1120px;
+  grid-gap: 50px;
+  width: 90%; }
 
 .blog .find-us input,
 .page-template-about-page .find-us input,
@@ -1234,7 +1233,12 @@ h2 {
   text-transform: uppercase; }
 
 .widget-area {
-  padding-left: 10%; }
+  padding-left: 40px;
+  border-left: 1px solid #f4f4f4; }
+  .widget-area ul {
+    padding-left: 0px;
+    list-style: none;
+    margin-left: 0px; }
 
 .content-single-product .site-main {
   display: -webkit-box;
@@ -1274,3 +1278,8 @@ h3 {
 
 .page404 h2 {
   text-align: left; }
+
+.taxonomy-description {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem;
+  text-align: center; }

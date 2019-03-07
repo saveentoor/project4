@@ -15,6 +15,9 @@
     border: none;
     color: white;
     float: left;
+    &:hover{
+      color: $color__link;
+    }
   }
   .main-navigation {
     display: flex;

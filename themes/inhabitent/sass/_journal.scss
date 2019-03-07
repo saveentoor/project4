@@ -1,19 +1,22 @@
 .journal-page {
-// .single-post,
-// .type-post {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin: auto;
+  grid-template-columns: 3fr 2fr;
+  margin: 0 auto;
+  padding-bottom: 10vh;
+  padding-top: 50px;
+  max-width: 1120px;
+  grid-gap: 50px;
+  width: 90%;
 
   .entry-header {
     position: relative;
-    max-width: 700px;
     a {
       color: white;
       background-color: $color_title_bg;
       text-transform: uppercase;
-      padding: 10px 20px;
+      
     }
+  
   }
 
   .entry-title {
@@ -21,6 +24,10 @@
     top: 0;
     display: block;
     width: 80%;
+    padding: 10px;
+    max-width: 75%;
+    font-size: 2rem;
+    background-color:  $color_title_bg;
   }
   .entry-meta {
     position: absolute;
@@ -31,8 +38,6 @@
     padding: 7px 20px;
     font-size: 16px;
   }
-.entry-content {
-  margin-right: 55vh;
   
 }
 
@@ -40,7 +45,6 @@
   margin-top: 50px;
 }
 
-}
 .journal-readmore-button{
   border: 1px solid black;
   color: black;

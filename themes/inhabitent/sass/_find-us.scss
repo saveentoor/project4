@@ -1,21 +1,18 @@
 .blog,
 .page-template-about-page,
 .page-id-30 {
-  .content-area {
+  .content-area  {
     display: grid;
     grid-template-columns: 3fr 2fr;
     margin: 0 auto;
     padding-bottom: 10vh;
     padding-top: 50px;
+    max-width: 1120px;
+    grid-gap: 50px;
+    width: 90%;
   }
-  .find-us-page {
-    width: 1120px;
-    margin: 0 auto;
-  }
-  .site-main {
-    border-right: 1px solid #f4f4f4;
-    padding-left: 10vh;
-  }
+
+  
 .find-us {
   input {
     background-color: #f4f4f4;
@@ -47,5 +44,11 @@
   text-transform: uppercase;
 }
 .widget-area{
-  padding-left: 10%;
+  padding-left: 40px;
+  border-left: 1px solid #f4f4f4;
+  ul{
+    padding-left: 0px;
+    list-style: none;
+    margin-left: 0px;
+  }
 }
