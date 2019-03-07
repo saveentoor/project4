@@ -655,12 +655,10 @@ p {
   clear: both;
   margin: 0 0 1.5rem; }
 
-/* Asides */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none; }
 
-/* Comments */
 .comment-content a {
   word-wrap: break-word; }
 
@@ -886,7 +884,8 @@ h2 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-left: 0px;
-    padding-left: 0px; }
+    padding-left: 0px;
+    margin: 150px; }
   .front-page-journal li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1190,6 +1189,8 @@ h2 {
 .product-info-container {
   text-align: center;
   padding-top: 36px; }
+  .product-info-container h2 {
+    text-align: center; }
 
 .image-wrapper {
   padding-top: 20px; }

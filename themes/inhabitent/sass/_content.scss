@@ -32,14 +32,11 @@
   margin: 0 0 $base__space-unit;
 }
 
-/* Asides */
 
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
 }
-
-/* Comments */
 
 .comment-content a {
   word-wrap: break-word;
@@ -47,7 +44,3 @@
 .bypostauthor {
   display: block;
 }
-// .site-main {
-//   width: 1120px;
-//   margin: 0 auto;
-// }
