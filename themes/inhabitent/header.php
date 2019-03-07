@@ -35,7 +35,10 @@
                 }
                 fieldset input{
                     color: black;
-                }
+				}
+				.search-sumbit{
+					color: #248A83 !important;
+				}
                 
             </style>
             <?php endif ?>
