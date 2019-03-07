@@ -436,7 +436,8 @@ input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 3px;
+  background-color: #f4f4f4; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -1295,37 +1296,18 @@ h3 {
   text-transform: uppercase;
   font-size: 2.4rem; }
 
-.error-404 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .error-404 .site-main {
-    padding-right: 5%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 8%;
-    border-right: 1px solid #e1e1e1; }
-    .error-404 .site-main h2 {
-      text-transform: uppercase;
-      letter-spacing: 2px; }
-    .error-404 .site-main .search-field {
-      text-transform: capitalize;
-      background-color: #f4f4f4;
-      width: 200px; }
-    .error-404 .site-main a {
-      text-decoration: none; }
-    .error-404 .site-main ul {
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-  .error-404 .widget-area {
-    padding-left: 5%; }
-    .error-404 .widget-area h2 {
-      text-transform: uppercase; }
-  .error-404 h1 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 2em; }
+ul {
+  list-style-type: none; }
+
+h2 {
+  text-align: left; }
+
+.widget-title {
+  text-align: left; }
+
+h1 {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
 
 .taxonomy-description {
   border-bottom: 1px dashed #c8c8c8;
